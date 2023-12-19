@@ -19,12 +19,12 @@ function HomePage() {
     <div className="container">
       <nav>
         <Link to="/" style={{ textDecoration: "none", color: "#fcd65c" }}>
-          <div>
+          <div className="logo">
             <h1>SEKANI</h1>
             <GoDotFill color="#fcd65c" size={30} />
           </div>
         </Link>
-        <div>
+        <div className="CV">
           <a
             href="https://drive.google.com/file/d/1YxSTXm3aQuEcxGaAOWhLMIh_6enA_K5r/view"
             style={{ textDecoration: "none", color: "#fcd65c" }}
@@ -33,6 +33,7 @@ function HomePage() {
           </a>
         </div>
       </nav>
+
       <main>
         <div className="main-text">
           <h6>Hello 👋</h6>
