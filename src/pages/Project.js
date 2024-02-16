@@ -1,6 +1,13 @@
+import { useState } from "react";
 import { GoDotFill } from "react-icons/go";
 
 function Project() {
+  const [loading, setLoading] = useState(true);
+
+  const handleImageLoad = () => {
+    setLoading(false);
+  };
+
   return (
     <div className="container">
       <div className="project-header">
@@ -20,7 +27,13 @@ function Project() {
         >
           <div>
             <p>Kanban Manager</p>
-            <img src="\images\kanban manger ss.png" alt="project" />
+            {loading && <div className="spinner"></div>}
+            <img
+              src="\images\kanban manger ss.png"
+              alt="project"
+              onLoad={handleImageLoad}
+              style={{ display: loading ? "none" : "block" }}
+            />
           </div>
         </a>
 
@@ -30,7 +43,13 @@ function Project() {
         >
           <div>
             <p>Fashion Frenzy</p>
-            <img src="/images/E-commerce screenshot.PNG" alt="project" />
+            {loading && <div className="spinner"></div>}
+            <img
+              src="/images/E-commerce screenshot.PNG"
+              alt="project"
+              onLoad={handleImageLoad}
+              style={{ display: loading ? "none" : "block" }}
+            />
           </div>
         </a>
 
@@ -40,7 +59,13 @@ function Project() {
         >
           <div>
             <p>Sneaker</p>
-            <img src="/images/sneakerCompany.PNG" alt="project" />
+            {loading && <div className="spinner"></div>}
+            <img
+              src="/images/sneakerCompany.PNG"
+              alt="project"
+              onLoad={handleImageLoad}
+              style={{ display: loading ? "none" : "block" }}
+            />
           </div>
         </a>
 
@@ -50,7 +75,13 @@ function Project() {
         >
           <div>
             <p>Where in the world</p>
-            <img src="/images/countryAPIScreenShot.PNG" alt="project" />
+            {loading && <div className="spinner"></div>}
+            <img
+              src="/images/countryAPIScreenShot.PNG"
+              alt="project"
+              onLoad={handleImageLoad}
+              style={{ display: loading ? "none" : "block" }}
+            />
           </div>
         </a>
       </div>
