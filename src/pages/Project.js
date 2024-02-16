@@ -16,11 +16,21 @@ function Project() {
       <div className="project-body">
         <a
           style={{ textDecoration: "none", color: "white" }}
+          href="https://enchanting-pastelito-dafd8b.netlify.app/"
+        >
+          <div>
+            <p>Kanban Manager</p>
+            <img src="\images\kanban manger ss.png" alt="project" />
+          </div>
+        </a>
+
+        <a
+          style={{ textDecoration: "none", color: "white" }}
           href="https://mellow-zabaione-fe430d.netlify.app/"
         >
           <div>
-            <img src="/images/E-commerce screenshot.PNG" alt="project" />
             <p>Fashion Frenzy</p>
+            <img src="/images/E-commerce screenshot.PNG" alt="project" />
           </div>
         </a>
 
@@ -29,8 +39,8 @@ function Project() {
           href="https://cheerful-lollipop-7b95f8.netlify.app/"
         >
           <div>
-            <img src="/images/sneakerCompany.PNG" alt="project" />
             <p>Sneaker</p>
+            <img src="/images/sneakerCompany.PNG" alt="project" />
           </div>
         </a>
 
@@ -39,8 +49,8 @@ function Project() {
           href="https://endearing-pudding-b463ef.netlify.app/"
         >
           <div>
-            <img src="/images/countryAPIScreenShot.PNG" alt="project" />
             <p>Where in the world</p>
+            <img src="/images/countryAPIScreenShot.PNG" alt="project" />
           </div>
         </a>
       </div>

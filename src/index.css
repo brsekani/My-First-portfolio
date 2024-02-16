@@ -125,7 +125,7 @@ main {
 footer {
   display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   gap: 25px;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -576,7 +576,6 @@ footer {
 
   /* BLOG */
   .coming-soon-container {
-    /* text-align: center; */
     text-align: center;
   }
 }
