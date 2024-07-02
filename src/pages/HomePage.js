@@ -16,29 +16,28 @@ function HomePage() {
   };
 
   return (
-    <div className="container">
-      <nav>
-        <Link to="/" style={{ textDecoration: "none", color: "#fcd65c" }}>
-          <div className="logo">
-            <h1>SEKANI</h1>
-            <GoDotFill color="#fcd65c" size={30} />
-          </div>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#232323] text-white font-['Varela_Round']">
+      <nav className="flex items-center justify-between w-full max-w-5xl mt-8 px-2">
+        <Link to="/" className="flex items-center text-[#fcd65c] no-underline">
+          <h1 className="text-2xl">SEKANI</h1>
+          <GoDotFill className="ml-1" color="#fcd65c" size={30} />
         </Link>
-        <div className="CV">
-          <a
-            href="https://drive.google.com/file/d/1YxSTXm3aQuEcxGaAOWhLMIh_6enA_K5r/view"
-            style={{ textDecoration: "none", color: "#fcd65c" }}
-          >
-            <button>My CV</button>
-          </a>
-        </div>
+
+        <a
+          href="https://drive.google.com/file/d/1YxSTXm3aQuEcxGaAOWhLMIh_6enA_K5r/view"
+          className="text-[#fcd65c] no-underline"
+        >
+          <button className="w-24 h-10 border-2 border-[#fcd65c] bg-[#232323] text-[#fcd65c] hover:bg-[#fcd65c] hover:text-[#232323]">
+            My CV
+          </button>
+        </a>
       </nav>
 
-      <main>
-        <div className="main-text">
-          <h6>Hello 👋</h6>
-          <h1>I'm Lawal Temidayo</h1>
-          <p>
+      <main className="flex flex-col items-center justify-between gap-12 mt-12 lg:flex-row lg:gap-24 lg:mt-32 px-5">
+        <div className="md:text-left">
+          <h6 className="text-[#fcd65c] text-lg">Hello 👋</h6>
+          <h1 className="mt-4 text-4xl font-bold">I'm Lawal Temidayo</h1>
+          <p className="mt-4 max-w-lg leading-7">
             a passionate and self-taught frontend developer with a keen eye for
             design and a love for creating intuitive and visually appealing user
             experiences.
@@ -46,77 +45,72 @@ function HomePage() {
 
           <a
             href="https://drive.google.com/file/d/1v0DEoeh4-cnUQ8Firzgb6OdNVDjPkTgO/view?usp=drive_link"
-            style={{ textDecoration: "none", color: "#232323" }}
+            className="text-[#232323] no-underline"
           >
-            <button> Download Resume</button>
+            <button className="w-44 h-12 mt-4 font-bold bg-[#fcd65c] text-[#232323] hover:bg-[#232323] hover:text-[#fcd65c] border-none">
+              Download Resume
+            </button>
           </a>
         </div>
 
-        <div className="main-icons">
+        <div className="grid grid-cols-2 gap-6">
           <Link
             to="/project"
-            style={{ textDecoration: "none", color: "white" }}
+            className="flex flex-col items-center justify-center w-36 h-28 border-2 border-[#fcd65c] rounded-lg hover:bg-[#fcd65c] text-white no-underline"
           >
-            <div>
-              <LuFolderHeart style={iconStyle} size={50} />
-              <p>My Project</p>
-            </div>
+            <LuFolderHeart className="text-3xl" />
+            <p className="text-sm mt-2">My Project</p>
           </Link>
           <Link
             to="/aboutMe"
-            style={{ textDecoration: "none", color: "white" }}
+            className="flex flex-col items-center justify-center w-36 h-28 border-2 border-[#fcd65c] rounded-lg hover:bg-[#fcd65c] text-white no-underline"
           >
-            <div>
-              <IoPersonCircle style={iconStyle} size={50} />
-              <p>About me</p>
-            </div>
+            <IoPersonCircle className="text-3xl" />
+            <p className="text-sm mt-2">About me</p>
           </Link>
 
-          <Link to="blog" style={{ textDecoration: "none", color: "white" }}>
-            <div>
-              <FaPenToSquare style={iconStyle} size={40} />
-              <p>My Blog</p>
-            </div>
+          <Link
+            to="blog"
+            className="flex flex-col items-center justify-center w-36 h-28 border-2 border-[#fcd65c] rounded-lg hover:bg-[#fcd65c] text-white no-underline"
+          >
+            <FaPenToSquare className="text-2xl" />
+            <p className="text-sm mt-2">My Blog</p>
           </Link>
 
           <Link
             to="/contactMe"
-            style={{ textDecoration: "none", color: "white" }}
+            className="flex flex-col items-center justify-center w-36 h-28 border-2 border-[#fcd65c] rounded-lg hover:bg-[#fcd65c] text-white no-underline"
           >
-            <div>
-              <MdOutgoingMail style={iconStyle} size={50} />
-              <p>Contact me</p>
-            </div>
+            <MdOutgoingMail className="text-3xl" />
+            <p className="text-sm mt-2">Contact me</p>
           </Link>
         </div>
       </main>
 
-      <footer>
+      <footer className="flex items-center justify-center gap-6 mt-10 mb-10">
         <a
-          style={{ textDecoration: "none", color: "white" }}
-          href="mailto::lawaltemidayo06@gmail.com"
+          href="mailto:lawaltemidayo06@gmail.com"
+          className="text-white no-underline"
         >
-          <IoMdMail size={25} style={iconStyle} />
+          <IoMdMail className="text-2xl" style={iconStyle} />
         </a>
         <a
-          style={{ textDecoration: "none", color: "white" }}
           href="https://github.com/brsekani/"
+          className="text-white no-underline"
         >
-          <FaGithub size={25} style={iconStyle} />
+          <FaGithub className="text-2xl" style={iconStyle} />
         </a>
-
         <a
-          style={{ textDecoration: "none", color: "white" }}
           href="https://www.linkedin.com/in/lawal-temidayo-0b024b270/"
+          className="text-white no-underline"
         >
-          <FaLinkedin size={25} style={iconStyle} />
+          <FaLinkedin className="text-2xl" style={iconStyle} />
         </a>
-
         <a
-          style={{ textDecoration: "none", color: "white" }}
           href="https://twitter.com/SeKaNi_TeCh"
+          className="text-white no-underline"
         >
-          <FaTwitter size={25} style={iconStyle} />
+          <FaTwitter className="text-2xl" style={iconStyle} />
         </a>
       </footer>
     </div>
