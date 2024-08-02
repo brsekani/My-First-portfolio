@@ -11,7 +11,7 @@ function Project() {
   const projects = [
     {
       name: "chariz Interiors",
-      link: "https://chariz.bojisua.com/home",
+      link: "https://chariz.bojisua.com/",
       image: "/images/charizInteriors.png",
       alt: "chariz Interiors",
       key: "chariz",
@@ -58,24 +58,24 @@ function Project() {
 
   return (
     <div className="flex flex-col items-center min-h-screen bg-[#232323] text-white font-['Varela_Round'] w-full px-10 pb-10">
-      <div className="flex items-center justify-center mt-10 mb-4 w-full">
+      <div className="flex items-center justify-center w-full mt-10 mb-4">
         <div className="flex items-center">
           <h1 className="text-[#fcd65c] text-3xl text-nowrap">Projects</h1>
           <GoDotFill color="#fcd65c" size={30} />
         </div>
-        <hr className="flex-grow border-t w-full border-gray-400 ml-4 hidden sm:flex" />
+        <hr className="flex-grow hidden w-full ml-4 border-t border-gray-400 sm:flex" />
       </div>
 
-      <div className="flex flex-wrap justify-center items-center gap-6 mt-12">
+      <div className="flex flex-wrap items-center justify-center gap-6 mt-12">
         {projects.map((project) => (
           <a
             key={project.key}
-            className="project-link no-underline text-white"
+            className="text-white no-underline project-link"
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="project-item relative overflow-hidden rounded-lg shadow-lg transition-shadow duration-300 w-full max-w-xs">
+            <div className="relative w-full max-w-xs overflow-hidden transition-shadow duration-300 rounded-lg shadow-lg project-item">
               {loading[project.key] && <div className="spinner"></div>}
               <img
                 src={project.image}
