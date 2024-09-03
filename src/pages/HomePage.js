@@ -17,14 +17,14 @@ function HomePage() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-[#232323] text-white font-['Varela_Round']">
-      <nav className="flex items-center justify-between w-full max-w-5xl mt-8 px-2">
+      <nav className="flex items-center justify-between w-full max-w-5xl px-2 mt-8">
         <Link to="/" className="flex items-center text-[#fcd65c] no-underline">
           <h1 className="text-2xl">SEKANI</h1>
           <GoDotFill className="ml-1" color="#fcd65c" size={30} />
         </Link>
 
         <a
-          href="https://drive.google.com/file/d/1YxSTXm3aQuEcxGaAOWhLMIh_6enA_K5r/view"
+          href="https://drive.google.com/file/d/1VMWQZvMDFwwCA8zqzvnaNF6bvfU5lbR_/view?usp=drive_link"
           className="text-[#fcd65c] no-underline"
         >
           <button className="w-24 h-10 border-2 border-[#fcd65c] bg-[#232323] text-[#fcd65c] hover:bg-[#fcd65c] hover:text-[#232323]">
@@ -33,11 +33,11 @@ function HomePage() {
         </a>
       </nav>
 
-      <main className="flex flex-col items-center justify-between gap-12 mt-12 lg:flex-row lg:gap-24 lg:mt-32 px-5">
+      <main className="flex flex-col items-center justify-between gap-12 px-5 mt-12 lg:flex-row lg:gap-24 lg:mt-32">
         <div className="md:text-left">
           <h6 className="text-[#fcd65c] text-lg">Hello 👋</h6>
           <h1 className="mt-4 text-4xl font-bold">I'm Lawal Temidayo</h1>
-          <p className="mt-4 max-w-lg leading-7">
+          <p className="max-w-lg mt-4 leading-7">
             a passionate and self-taught frontend developer with a keen eye for
             design and a love for creating intuitive and visually appealing user
             experiences.
@@ -59,14 +59,14 @@ function HomePage() {
             className="flex flex-col items-center justify-center w-36 h-28 border-2 border-[#fcd65c] rounded-lg hover:bg-[#fcd65c] text-white no-underline"
           >
             <LuFolderHeart className="text-3xl" />
-            <p className="text-sm mt-2">My Project</p>
+            <p className="mt-2 text-sm">My Project</p>
           </Link>
           <Link
             to="/aboutMe"
             className="flex flex-col items-center justify-center w-36 h-28 border-2 border-[#fcd65c] rounded-lg hover:bg-[#fcd65c] text-white no-underline"
           >
             <IoPersonCircle className="text-3xl" />
-            <p className="text-sm mt-2">About me</p>
+            <p className="mt-2 text-sm">About me</p>
           </Link>
 
           <Link
@@ -74,7 +74,7 @@ function HomePage() {
             className="flex flex-col items-center justify-center w-36 h-28 border-2 border-[#fcd65c] rounded-lg hover:bg-[#fcd65c] text-white no-underline"
           >
             <FaPenToSquare className="text-2xl" />
-            <p className="text-sm mt-2">My Blog</p>
+            <p className="mt-2 text-sm">My Blog</p>
           </Link>
 
           <Link
@@ -82,7 +82,7 @@ function HomePage() {
             className="flex flex-col items-center justify-center w-36 h-28 border-2 border-[#fcd65c] rounded-lg hover:bg-[#fcd65c] text-white no-underline"
           >
             <MdOutgoingMail className="text-3xl" />
-            <p className="text-sm mt-2">Contact me</p>
+            <p className="mt-2 text-sm">Contact me</p>
           </Link>
         </div>
       </main>
