@@ -19,6 +19,15 @@ function Project() {
       role: "Frontend",
     },
     {
+      name: "HR Solution",
+      link: "https://hr-solutions-3lbh.vercel.app/",
+      image: "/images/HRSolutionPage.png",
+      alt: "HR Solution",
+      key: "HR Solution",
+      technologies: "NextJss, Tailwind CSS, Framer Motion",
+      role: "Frontend",
+    },
+    {
       name: "Kanban Manager",
       link: "https://enchanting-pastelito-dafd8b.netlify.app/",
       image: "/images/kanbanManger.png",
